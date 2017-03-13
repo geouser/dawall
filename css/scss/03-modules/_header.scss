@@ -4,6 +4,7 @@
     @include transition(all, .4s);
     @include flex();
     padding: 30px 100px 0;
+    z-index: 5;
     &__left {
         width: 50%;
         text-align: left;
@@ -33,6 +34,7 @@ a.logo {
     bottom: 0;
     background-color: #000;
     padding: 15px 0 19px;
+    z-index: 5;
 }
 .mainNav {
     width: 100%;
