@@ -30,9 +30,53 @@ body {
 // ---------------------------
 .wrapper {
 	width: 1200px;
+  padding: 0 10px;
 	margin: 0 auto;
-	text-align: center;
 }
+
+.wrapper-wide {
+  width: 1600px;
+  padding: 0 10px;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.align-right {
+  text-align: right;
+} 
+.align-left {
+  text-align: left;
+}
+.align-justify {
+  text-align: justify;
+}
+
+.text-block {
+  display: inline-block;
+  width: 480px;
+  max-width: 100%;
+  color: #fff;
+  font-size: 24px;
+  letter-spacing: 0.05em;
+
+  &.full {
+    width: 100%;
+  }
+
+  h2 {
+    font-weight: normal;
+    font-size: 36px;
+    color: $gold;
+    margin-bottom: 50px;
+  }
+
+  p:not(:last-child) {
+    margin-bottom: 26px;
+  }
+}
+
+
+
 
 .flex-row {
     @include flex($alignI: flex-start, $justify: flex-start);
