@@ -14,17 +14,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
-
-  /*background-image: -moz-linear-gradient( 90deg, rgba(0,0,0,0) 0%, rgb(0,0,0) 100%);*/
-  /*background-image: -webkit-linear-gradient( 90deg, rgba(0,0,0,0) 0%, rgb(0,0,0) 100%);*/
-  /*background-image: -ms-linear-gradient( 90deg, rgba(0,0,0,0) 0%, rgb(0,0,0) 100%);*/
 }
-.fullpage {
-  /*background-image: -moz-linear-gradient( 90deg, rgb(0,0,0) 0%, rgba(0,0,0,0) 100%);*/
-  /*background-image: -webkit-linear-gradient( 90deg, rgb(0,0,0) 0%, rgba(0,0,0,0) 100%);*/
-  /*background-image: -ms-linear-gradient( 90deg, rgb(0,0,0) 0%, rgba(0,0,0,0) 100%);*/
-}
-
 
 // lAYOUT
 // ---------------------------
@@ -131,7 +121,58 @@ body {
   }
 }
 
+.fp-section {
+  .wrapper,
+  .wrapper-wide {
+    position: relative;
+    z-index: 10;
+  }
+}
 
+.shadow-top {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 25%;
+  background-image: -moz-linear-gradient( 90deg, rgba(0,0,0,0) 0%, rgb(0,0,0) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgba(0,0,0,0) 0%, rgb(0,0,0) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgba(0,0,0,0) 0%, rgb(0,0,0) 100%);
+}
+.shadow-bottom {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 25%;
+  background-image: -moz-linear-gradient( 90deg, rgb(0,0,0) 0%, rgba(0,0,0,0) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(0,0,0) 0%, rgba(0,0,0,0) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(0,0,0) 0%, rgba(0,0,0,0) 100%);
+
+}
+.shadow-left {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  background-image: -moz-linear-gradient( 0deg, rgb(0,0,0) 0%, rgba(0,0,0,0) 100%);
+  background-image: -webkit-linear-gradient( 0deg, rgb(0,0,0) 0%, rgba(0,0,0,0) 100%);
+  background-image: -ms-linear-gradient( 0deg, rgb(0,0,0) 0%, rgba(0,0,0,0) 100%);
+}
+.shadow-right {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 35%;
+  background-image: -moz-linear-gradient( 0deg, rgba(0,0,0,0) 0%, rgb(0,0,0) 100%);
+  background-image: -webkit-linear-gradient( 0deg, rgba(0,0,0,0) 0%, rgb(0,0,0) 100%);
+  background-image: -ms-linear-gradient( 0deg, rgba(0,0,0,0) 0%, rgb(0,0,0) 100%);
+
+}
 
 
 .flex-row {
