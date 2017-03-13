@@ -122,6 +122,10 @@ body {
 }
 
 .fp-section {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  
   .wrapper,
   .wrapper-wide {
     position: relative;
