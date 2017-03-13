@@ -4,6 +4,7 @@
     @include transition(all, .4s);
     @include flex();
     padding: 30px 100px 0;
+    z-index: 5;
     &__left {
         width: 50%;
         text-align: left;
@@ -33,6 +34,7 @@ a.logo {
     bottom: 0;
     background-color: #000;
     padding: 15px 0 19px;
+    z-index: 5;
 }
 .mainNav {
     width: 100%;
@@ -82,6 +84,7 @@ a.logo {
     vertical-align: middle;
     color: $gold;
     margin-right: 45px;
+    cursor: pointer;
 }
 
 /* ------------------------------------ */
@@ -130,4 +133,31 @@ a.logo {
             display: block;
         }
 
+}
+
+
+#site-nav-popup {
+    background: #0E1116;
+    padding: 60px 75px;
+    margin: auto;
+    width: 940px;
+    max-width: 100%;
+    @include flex($alignI: flex-start);
+    .site-link {
+        width: 33%;
+        text-align: center;
+        span {
+            display: block;
+            text-align: center;
+            margin-bottom: 35px;
+            font-size: 24px;
+            color: #FFF;
+            font-weight: normal;
+        }
+        img {
+            display: block;
+            margin: 0 auto;
+            max-width: 175px;
+        }
+    }
 }
