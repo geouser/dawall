@@ -1,0 +1,124 @@
+.tabs--pattern {
+    margin-top: 40px;
+}
+
+.tabs-controls {
+    margin-bottom: 55px;
+}
+.tabs-controls-item {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    margin-right: 20px;
+    background-color: #726340;
+    &.ui-tabs-active {
+        background-color: $gold;
+    }
+    &:last-of-type {
+        margin-right: 0;
+    }
+    list-style-type: none;
+    a {
+        display: inline-block;
+        min-width: 180px;
+        color: #000;
+        font-size: 20px;
+        font-weight: 100;
+        padding: 0px 10px 8px;
+    }
+}
+
+.patterns {
+    @include flex();
+    margin: 0 -15px;
+}
+.pattern-card {
+    width: 270px;
+    height: 270px;
+    background-color: #252525;
+    margin: 15px;
+    img {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+    position: relative;
+    &:after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 95%;
+        height: 95%;
+        border: 4px solid $gold;
+        top: -14px;
+        right: -12px;
+        z-index: -1;
+    }
+    &:before {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        right: 0;
+        opacity: 0;
+        @include transition(all,.2s);
+        background-image: url("../images/arrow-right.svg");
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        background-color: rgba(27,27,27,.9);
+        -webkit-background-size: 44px 30px;
+             -o-background-size: 44px 30px;
+                background-size: 44px 30px;
+    }
+    &:hover {
+        &:before {
+            opacity: 1;
+        }
+    }
+}
+
+.tabs-tab {
+    .button {
+        display: block;
+        margin: 40px auto 0;
+    }
+}
+
+.breadcrumbs {
+    list-style-type: none;
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    li {
+        display: inline-block;
+        vertical-align: middle;        
+        margin: 0 5px;
+        position: relative;
+        &.active,
+        &:hover {
+            a {
+                color: $gold;
+            }
+        }
+        a {
+            color: #FFF;
+            font-size: 21px;
+            font-weight: 100;
+        }
+        &:last-of-type:after {
+            position: absolute;
+            display: block;
+            content: "";
+            width: 80px;
+            height: 12px;
+            right: -106px;
+            top: 12px;
+            background-image: url("../images/long-arrow.png");
+            -webkit-background-size: 100% 100%;
+                 -o-background-size: 100% 100%;
+                    background-size: 100% 100%;
+        }
+    }
+}

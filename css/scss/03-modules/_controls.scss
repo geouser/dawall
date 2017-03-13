@@ -1,23 +1,18 @@
 .button {
-    background-color: peru;
-    width: 180px;
-    height: 60px;
+    background-color: $gold;
+    width: 240px;
+    height: 45px;
     
     text-align: center;
-    line-height: 60px;
+    line-height: 40px;
     text-transform: uppercase;
-    color: #fff;
-    font-weight: 500;
-    font-size: 16px;
+    color: #000;
+    font-weight: 100;
+    font-size: 20px;
     
     display: inline-block;
     border: none;
     cursor: pointer;
-    @media (max-width: 1500px) {
-        width: 160px;
-        height: 50px;
-        line-height: 50px;
-    }
 }
 
 /* ------------------------------------ */
