@@ -119,7 +119,15 @@ jQuery(document).ready(function($) {
         mainClass: 'my-mfp-slide-bottom'
     });
 
-
+    $('.offer--slider').slick({
+        fade: true,
+        arrows: false,
+        dots: true,
+        speed: 900,
+        autoplay: true,
+        autoplaySpeed: 5000,
+        pauseOnHover: false
+    });
 
     /*----------------------------
                               SEND FORM
