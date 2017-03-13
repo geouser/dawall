@@ -1,9 +1,15 @@
 .tabs--pattern {
     margin-top: 40px;
+    @media (max-width: 1920px) {
+        margin-top: 30px;
+    }
 }
 
 .tabs-controls {
     margin-bottom: 55px;
+    @media (max-width: 1920px) {
+        margin-top: 30px;
+    }
 }
 .tabs-controls-item {
     display: inline-block;
@@ -11,6 +17,10 @@
     text-align: center;
     margin-right: 20px;
     background-color: #726340;
+    padding: 0;
+    &:before {
+            display: none;
+        }
     &.ui-tabs-active {
         background-color: $gold;
     }
@@ -37,6 +47,10 @@
     height: 270px;
     background-color: #252525;
     margin: 15px;
+    @media (max-width: 1700px) {
+        width: 220px;
+        height: 220px;
+    }
     img {
         display: block;
         width: 100%;
@@ -83,6 +97,9 @@
     .button {
         display: block;
         margin: 40px auto 0;
+        @media (max-width: 1920px) {
+            margin-top: 20px;
+        }
     }
 }
 
@@ -91,11 +108,19 @@
     display: block;
     text-align: center;
     margin-top: 20px;
+    @media (max-width: 1920px) {
+        margin-top: 10px;
+    }
     li {
         display: inline-block;
         vertical-align: middle;        
         margin: 0 5px;
         position: relative;
+        list-style-type: none;
+        padding: 0;
+        &:before {
+            display: none;
+        }
         &.active,
         &:hover {
             a {
