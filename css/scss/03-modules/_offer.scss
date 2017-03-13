@@ -4,10 +4,12 @@
 
 
 .offer--slider {
+
     height: 660px;
-    width: 1200px;
+    width: 100%;
     position: relative;
     background: #000;
+    margin-top: 80px;
     
     @media (max-width: 1700px) {
         height: 560px;
