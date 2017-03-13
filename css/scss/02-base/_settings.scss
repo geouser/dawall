@@ -9,6 +9,10 @@ body {
 body {
   font-family: 'Segoe UI';
   font-weight: 300;
+  background-image: url(../images/decor.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
 }
 
 
@@ -20,7 +24,6 @@ body {
 	margin: 0 auto;
 	text-align: center;
 }
-
 
 .flex-row {
     @include flex($alignI: flex-start, $justify: flex-start);

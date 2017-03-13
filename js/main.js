@@ -26,6 +26,18 @@ function exist(el){
 jQuery(document).ready(function($) {
 
     /*---------------------------
+                                  Fullpage
+    ---------------------------*/
+    $('#fullpage').fullpage({
+        lockAnchors: true,
+        sectionSelector: '.fp-section',
+        slideSelector: '.fp-slide',
+    });
+
+
+
+
+    /*---------------------------
                                   ADD CLASS ON SCROLL
     ---------------------------*/
     $(function() { 
