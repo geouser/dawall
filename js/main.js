@@ -129,6 +129,50 @@ jQuery(document).ready(function($) {
         pauseOnHover: false
     });
 
+    $('.partners-slider').slick({
+        arrows: false,
+        dots: false,
+        slidesToShow: 8,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        speed: 1000,
+        easing: 'ease',
+        pauseOnHover: true,
+        pauseOnFocus: true,
+        draggable: true,
+        responsive: [
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 6,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 991,
+                settings: {
+                    slidesToShow: 5,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 767,
+                settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 500,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    })
+
     /*----------------------------
                               SEND FORM
     -------------------------*/

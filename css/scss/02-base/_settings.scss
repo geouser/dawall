@@ -65,6 +65,13 @@ body {
   }
 }
 
+.fp-section {
+  .wrapper,
+  .wrapper-wide {
+    position: relative;
+    z-index: 10;
+  }
+}
 
 .shadow-top {
   position: absolute;
