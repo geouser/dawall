@@ -32,6 +32,7 @@ jQuery(document).ready(function($) {
         lockAnchors: true,
         sectionSelector: '.fp-section',
         slideSelector: '.fp-slide',
+        responsiveWidth: 1200,
     });
 
 
@@ -78,7 +79,7 @@ jQuery(document).ready(function($) {
     /*---------------------------
                                 ACTIVATE MENU ITEM OVER CURRENT SECTION
     ---------------------------*/
-    var $sections = $('section');
+    /*var $sections = $('section');
     $(window).scroll(function(){
         var currentScroll = $(this).scrollTop();
         var $currentSection;
@@ -94,7 +95,7 @@ jQuery(document).ready(function($) {
           $('a').removeClass('active');
           $("[href=#"+id+"]").addClass('active');
         })
-    });
+    });*/
 
     /*---------------------------
                                   MENU TOGGLE
