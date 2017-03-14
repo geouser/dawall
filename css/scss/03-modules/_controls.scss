@@ -103,20 +103,20 @@
     li {
         display: inline-block;
         vertical-align: middle;
-        width: 10px;
-        height: 10px;
-        background-color: #FFF;
-        border: 2px solid #fff;
-        -webkit-border-radius: 50%;
-                border-radius: 50%;
+        padding: 0!important;
         &.slick-active {
-            background-color: transparent;
+            button {
+            color: $gold;
+            }
         }
-        &:before {
+        &:before,
+        button:before {
             display: none;
         }
         button {
-            display: none;
+            color: #FFF;
+            font-size: 21px;
+            font-weight: 100;
         }
     }
 }

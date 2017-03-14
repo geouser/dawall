@@ -123,3 +123,46 @@
     article p {
         font-size: 20px;
     }
+
+    .patterns--slider {
+        .slick-arrow {
+        width: 85px;
+        height: 85px;
+        background-color: transparent;
+        background-size: 100%;
+
+        @media (max-width: 1700px) {
+            top: 100%;
+            -webkit-transform: translateY(0);
+            -ms-transform: translateY(0);
+            -o-transform: translateY(0);
+            transform: translateY(0);
+            width: 50px;
+            height: 50px;
+        }
+
+        &.slick-prev {
+            background-image: url(../images/slick-prev.svg);
+            left: -150px;
+
+            @media (max-width: 1700px) {
+                right: 50%;
+                margin-right: 20px;
+                left: auto;
+            }
+        }
+
+        &.slick-next {
+            background-image: url(../images/slick-next.svg);
+            @media (max-width: 1700px) {
+                left: 50%;
+                margin-left: 20px;
+                right: auto;
+            }
+        }
+
+        &.slick-disabled {
+            opacity: 0.5;
+        }
+    }
+}

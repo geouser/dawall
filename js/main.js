@@ -216,6 +216,40 @@ jQuery(document).ready(function($) {
         ]
     })
 
+    $('.patterns--slider').slick({
+        arrows: true,
+        dots: true,
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        easing: 'ease',
+        pauseOnHover: true,
+        pauseOnFocus: true,
+        draggable: true,
+        responsive: [
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 767,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 500,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    })
+
 
     $('.projects-slider').on('init', function(event, slick) {
         event.preventDefault();
