@@ -104,6 +104,9 @@
         display: inline-block;
         vertical-align: middle;
         padding: 0!important;
+        @media (max-width: 800px) {
+            margin: 0 2px;
+        }
         &.slick-active {
             button {
             color: $gold;
