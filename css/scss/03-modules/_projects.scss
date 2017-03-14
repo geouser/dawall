@@ -1,5 +1,5 @@
 .projects-slider {
-    margin: 100px 0;
+    margin: 100px 0!important;
     opacity: 0;
     visibility: hidden;
     -webkit-transition: all 0.3s ease;
@@ -12,7 +12,7 @@
     }
 
     @media (max-width: 1700px) {
-        margin: 50px 0;
+        margin: 50px 0!important;
     }
 
     .slide {
@@ -65,6 +65,8 @@
 
         &.slick-next {
             background-image: url(../images/slick-next.svg);
+            right: -150px;
+
             @media (max-width: 1700px) {
                 left: 50%;
                 margin-left: 20px;
@@ -75,6 +77,12 @@
         &.slick-disabled {
             opacity: 0.5;
         }
+    }
+
+    .slick-dots {
+        top: 100%;
+        bottom: auto;
+        padding-top: 10px;
     }
 }
 

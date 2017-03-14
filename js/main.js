@@ -216,6 +216,10 @@ jQuery(document).ready(function($) {
         ]
     })
 
+    $('.patterns--slider').on('init', function(event, slick) {
+        event.preventDefault();
+        $(this).addClass('visible')
+    });
     $('.patterns--slider').slick({
         arrows: true,
         dots: true,
@@ -257,7 +261,7 @@ jQuery(document).ready(function($) {
     });
     $('.projects-slider').slick({
         arrows: true,
-        dots: true,
+        dots: false,
         slidesToShow: 4,
         slidesToScroll: 1,
         infinite: false,
