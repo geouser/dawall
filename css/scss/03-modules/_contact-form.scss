@@ -32,9 +32,21 @@
         line-height: 33px;
         font-size: 18px;
         color: #E8E8E8;
+        text-align: left;
+        display: block;
     }
 
     textarea {
         border: 2px solid #E8E8E8;
+        height: 196px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .button {
+        -webkit-transform: translateY(-100%);
+        -ms-transform: translateY(-100%);
+        -o-transform: translateY(-100%);
+        transform: translateY(-100%);
     }
 }
