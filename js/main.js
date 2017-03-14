@@ -226,7 +226,27 @@ jQuery(document).ready(function($) {
         dots: false,
         slidesToShow: 4,
         slidesToScroll: 1,
-        infinite: false
+        infinite: false,
+        responsive: [
+            {
+                breakpoint: 1000,
+                settings: {
+                    slidesToShow: 3
+                }
+            },
+            {
+                breakpoint: 770,
+                settings: {
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 520,
+                settings: {
+                    slidesToShow: 1
+                }
+            }
+        ]
     })
 
     /*---------------------------
