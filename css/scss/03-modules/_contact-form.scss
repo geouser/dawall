@@ -1,0 +1,40 @@
+.contact-form {
+    display: inline-block;
+    width: 860px;
+    max-width: 100%;
+
+    .form-group {
+        width: 100%;
+
+        &:not(:last-child) {
+            margin-bottom: 25px;
+        }
+    }
+
+    input[type=text],
+    input[type=email],
+    input[type=tel],
+    textarea {
+        height: 35px;
+        border: 0;
+        border-bottom: 2px solid #E8E8E8;
+        color: #E8E8E8;
+        font-size: 18px;
+        padding: 0 10px;
+        background-color: transparent;
+        display: block;
+        width: 100%;
+    }
+
+
+    label {
+        height: 35px;
+        line-height: 33px;
+        font-size: 18px;
+        color: #E8E8E8;
+    }
+
+    textarea {
+        border: 2px solid #E8E8E8;
+    }
+}
