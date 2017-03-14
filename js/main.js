@@ -257,7 +257,7 @@ jQuery(document).ready(function($) {
     });
     $('.projects-slider').slick({
         arrows: true,
-        dots: false,
+        dots: true,
         slidesToShow: 4,
         slidesToScroll: 1,
         infinite: false,
