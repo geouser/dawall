@@ -43,6 +43,9 @@ a.logo {
     @media (max-width: 1600px) {
         width: 160px;
     }
+    @media (max-width: 1500px) {
+        width: 140px;
+    }
     @media (max-width: 1200px) {
         width: 80px;
         top: 10px;
@@ -219,6 +222,12 @@ a.logo {
     width: 940px;
     max-width: 100%;
     @include flex($alignI: flex-start);
+    @media (max-width: 800px) {
+        padding: 40px;
+    }
+    @media (max-width: 600px) {
+        padding: 20px;
+    }
     .site-link {
         width: 33%;
         text-align: center;
@@ -229,11 +238,23 @@ a.logo {
             font-size: 24px;
             color: #FFF;
             font-weight: normal;
+            @media (max-width: 800px) {
+                font-size: 18px;
+                margin-bottom: 20px;
+                min-height: 50px;
+            }
         }
         img {
             display: block;
             margin: 0 auto;
             max-width: 175px;
+            @media (max-width: 800px) {
+                max-width: 90%;
+                max-height: 90px;
+            }
+            @media (max-width: 600px) {
+                max-height: 70px;
+            }
         }
     }
 }
