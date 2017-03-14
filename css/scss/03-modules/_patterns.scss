@@ -1,3 +1,10 @@
+.tabs {
+    width: 1200px;
+    padding: 0 10px;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
 .tabs--pattern {
     margin-top: 40px;
     @media (max-width: 1920px) {
@@ -48,12 +55,30 @@
 }
 
 .patterns {
-    @include flex();
-    margin: 0 -15px;
+    @extend .projects-slider;
+
+    &.patterns--slider {
+        margin: 50px 0 70px!important;
+
+        @media (max-width: 1700px) {
+            margin: 50px 0 100px!important;
+
+            .slick-arrow {
+                margin-top: 40px;
+            }
+        }
+    }
+
+
+
+    .slide {
+        text-align: center;
+    }
 }
-.slide {
-    text-align: center;
-}
+
+
+
+
 .pattern-card {
     width: 270px;
     height: 270px;
