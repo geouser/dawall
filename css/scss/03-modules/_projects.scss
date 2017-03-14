@@ -1,0 +1,107 @@
+.projects-slider {
+    margin: 100px 0;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+
+    &.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    @media (max-width: 1700px) {
+        margin: 50px 0;
+    }
+
+    .slide {
+        padding: 0 10px;
+        text-align: center;
+
+        a {
+            display: block;
+            margin-left: 0!important;
+            margin-right: 0!important;
+            margin-bottom: 0!important;
+
+            @media (max-width: 1700px) {
+                display: inline-block;
+            }
+
+            img {
+                display: block;
+                width: 100%;
+            }
+        }
+    }
+
+    .slick-arrow {
+        width: 85px;
+        height: 85px;
+        background-color: transparent;
+        background-size: 100%;
+
+        @media (max-width: 1700px) {
+            top: 100%;
+            -webkit-transform: translateY(0);
+            -ms-transform: translateY(0);
+            -o-transform: translateY(0);
+            transform: translateY(0);
+            width: 50px;
+            height: 50px;
+        }
+
+        &.slick-prev {
+            background-image: url(../images/slick-prev.svg);
+            left: -150px;
+
+            @media (max-width: 1700px) {
+                right: 50%;
+                margin-right: 20px;
+                left: auto;
+            }
+        }
+
+        &.slick-next {
+            background-image: url(../images/slick-next.svg);
+            @media (max-width: 1700px) {
+                left: 50%;
+                margin-left: 20px;
+                right: auto;
+            }
+        }
+
+        &.slick-disabled {
+            opacity: 0.5;
+        }
+    }
+}
+
+
+.tabs--projects .button {
+    margin-top: 0;
+    width: 380px;
+}
+
+.mfp-bottom-bar {
+    margin-top: 0;
+    top: auto;
+    bottom: 100%;
+}
+
+.mfp-bottom-bar .mfp-counter {
+    display: none;
+}
+.mfp-bottom-bar .mfp-title {
+    text-align: center;
+    padding-right: 0;
+    font-size: 36px;
+    color: $gold;
+    font-weight: normal;
+}
+
+
+.mfp-gallery .mfp-image-holder {
+    padding-top: 40px;
+}
