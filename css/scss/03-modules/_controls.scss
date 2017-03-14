@@ -39,6 +39,13 @@
                 margin-left: 2px;
             }
         }
+        @media (max-width: 1200px) {
+            width: 240px;
+            height: 45px;
+            
+            text-align: center;
+            line-height: 40px;
+        }
     }
 }
 
