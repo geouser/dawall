@@ -43,6 +43,13 @@ body {
 }
 .align-justify {
   text-align: justify;
+
+  h2 {
+    text-align: left;
+  }
+}
+.align-center {
+  text-align: center;
 }
 
 .text-block {
@@ -65,8 +72,18 @@ body {
     }
   }
 
+  &.large {
+    width: 820px;
+    max-width: 100%;
+  }
+
   &.full {
     width: 100%;
+  }
+
+  .page-title {
+    font-size: 100px;
+    font-weight: normal;
   }
 
   h2 {
@@ -74,7 +91,6 @@ body {
     font-size: 36px;
     color: $gold;
     margin-bottom: 50px;
-    text-align: left;
 
     @media (max-width: 1600px) {
       font-size: 30px;
@@ -117,6 +133,27 @@ body {
 
     @media (max-width: 1600px) {
       margin-bottom: 20px;
+    }
+  }
+
+
+
+  &.fixed-table table {
+    width: 100%;
+    table-layout: fixed;
+
+    td {
+      width: 50%;
+      padding: 0 10px;
+    }
+
+    td:first-child {
+      text-align: right;
+      color: $gold;
+    }
+
+    td:last-child {
+      text-align: left;
     }
   }
 }
