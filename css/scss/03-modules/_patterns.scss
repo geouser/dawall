@@ -8,14 +8,14 @@
 .tabs--pattern {
     margin-top: 40px;
     @media (max-width: 1920px) {
-        margin-top: 30px;
+        margin-top: 20px;
     }
 }
 
 .tabs-controls {
     margin-bottom: 55px;
     @media (max-width: 1920px) {
-        margin-top: 30px;
+        margin-top: 20px;
     }
     @media (max-width: 1200px) {
         text-align: center;
@@ -58,7 +58,7 @@
     @extend .projects-slider;
 
     &.patterns--slider {
-        margin: 50px 0 70px!important;
+        margin: 40px 0 60px!important;
 
         @media (max-width: 1700px) {
             margin: 50px 0 100px!important;
