@@ -28,8 +28,8 @@
 
 
     label {
-        height: 35px;
-        line-height: 33px;
+        height: 33px;
+        line-height: 31px;
         font-size: 18px;
         color: #E8E8E8;
         text-align: left;
@@ -41,6 +41,7 @@
         height: 196px;
         padding-top: 10px;
         padding-bottom: 10px;
+        resize: none;
     }
 
     .button {
