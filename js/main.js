@@ -35,6 +35,19 @@ jQuery(document).ready(function($) {
     });
 
 
+    /*---------------------------
+                                  Custom scroll-bar
+    ---------------------------*/
+    if ( exist('.scroll') ) {
+        $('.scroll').mCustomScrollbar({
+            axis: 'y'
+        });
+
+        $(window).on('resize', function(event) {
+            event.preventDefault();
+            $('.scroll').mCustomScrollbar("update");
+        });
+    }
 
 
     /*---------------------------
