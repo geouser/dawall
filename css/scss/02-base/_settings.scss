@@ -272,15 +272,7 @@ body {
 
 
 
-.shadow-top,
-.shadow-bottom,
-.shadow-left,
-.shadow-right,
-.shadow-top-light,
-.shadow-bottom-light {
-  display: none;
-}
-@media (min-width: 1199px) {
+
 .shadow-top {
   display: block;
   position: absolute;
@@ -352,8 +344,6 @@ body {
   background-image: -ms-linear-gradient( 90deg, rgba(0,0,0,.6) 0%, rgba(0,0,0,0) 100%);
 
 }
-}
-
 .flex-row {
     @include flex($alignI: flex-start, $justify: flex-start);
     margin: 0 -15px;
