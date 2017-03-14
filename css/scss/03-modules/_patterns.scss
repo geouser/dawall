@@ -147,3 +147,46 @@
         }
     }
 }
+
+.pattern-popup {
+    width: 1160px;
+    max-width: 100%;
+    background-color: #202020;
+    @include flex($justify: flex-start);
+    margin: 0 auto;
+    .pattern-card {
+        margin: 0;
+        &:after,
+        &:before {
+            display: none;
+        }
+    }
+    .mfp-close {
+        color: $gold;
+    }
+}
+
+.pattern-info {
+    text-align: left;
+    padding: 20px 20px 20px 12%;
+    span {
+        display: block;
+        color: $gold;
+        font-size: 36px;
+        font-weight: 400;
+        margin-bottom: 8px;
+    }
+    ul {
+        li {
+            list-style-type: none;
+            display: block;
+            font-size: 20px;
+            font-weight: 300;
+            color: #B5B5B5;
+            strong {
+                color: #FFF;
+                font-weight: 200;
+            }
+        }
+    }
+}
