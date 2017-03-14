@@ -13,6 +13,29 @@
     display: inline-block;
     border: none;
     cursor: pointer;
+    &--text {
+        color: $gold;
+        width: auto;
+        text-align: left;
+        background: transparent;
+        padding: 0;
+        font-weight: 200;
+        &:hover {
+            color: #d6ba77;
+        }
+        &:after {
+            content: "";
+            display: inline-block;
+            vertical-align: middle;
+            width: 20px;
+            height: 15px;
+            margin-left: 8px;
+            background-image: url("../images/arrow-right-gold.svg");
+            -webkit-background-size: 100% 100%;
+                 -o-background-size: 100% 100%;
+                    background-size: 100% 100%;
+        }
+    }
 }
 
 /* ------------------------------------ */
