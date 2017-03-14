@@ -36,8 +36,7 @@
                 text-transform: uppercase;
                 font-size: 20px;
                 margin-bottom: 28px;
-                font-weight: 100;
-
+                
                 @media (max-width: 1500px) {
                     margin-bottom: 15px;
                 }
@@ -80,8 +79,9 @@
 
                 p {
                     font-size: 20px; 
-                    font-weight: 100;
+                    font-weight: 300;
                     line-height: 1.25;
+                    letter-spacing: .05em;
                     @media (max-width: 1000px) {
                         font-size: 16px;
                     }
@@ -93,4 +93,14 @@
         }
 
 
+    }
+
+
+    .page-title--small {
+      font-size: 36px;
+      font-weight: 400;
+      color: $gold;
+      display: block;
+      text-align: center;
+      margin-bottom: 50px;
     }

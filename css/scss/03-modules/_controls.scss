@@ -20,9 +20,6 @@
         background: transparent;
         padding: 0;
         font-weight: 200;
-        &:hover {
-            color: #d6ba77;
-        }
         &:after {
             content: "";
             display: inline-block;
@@ -30,10 +27,17 @@
             width: 20px;
             height: 15px;
             margin-left: 8px;
+            margin-top: -2px;
+            @include transition(all,.2s);
             background-image: url("../images/arrow-right-gold.svg");
             -webkit-background-size: 100% 100%;
                  -o-background-size: 100% 100%;
                     background-size: 100% 100%;
+        }
+        &:hover {
+            &:after {
+                margin-left: 2px;
+            }
         }
     }
 }
