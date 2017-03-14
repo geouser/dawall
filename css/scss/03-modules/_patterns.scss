@@ -156,6 +156,9 @@
         position: relative;
         list-style-type: none;
         padding: 0;
+        @media (max-width: 1600px) {
+            margin: 0 4px;
+        }
         &:before {
             display: none;
         }
@@ -169,6 +172,9 @@
             color: #FFF;
             font-size: 21px;
             font-weight: 100;
+            @media (max-width: 1600px) {
+                font-size: 18px;
+            }
         }
         &:last-of-type:after {
             position: absolute;
