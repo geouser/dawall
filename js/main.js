@@ -293,7 +293,7 @@ jQuery(document).ready(function($) {
     if ( exist('.tabs') ) {
         $('.tabs').tabs({
             activate: function( event, ui ) {
-                ui.newPanel.find('.projects-slider').slick('setPosition');
+                ui.newPanel.find('.slick-slider').slick('setPosition');
             }
         });
     }
