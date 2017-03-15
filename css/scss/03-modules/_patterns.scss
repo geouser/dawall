@@ -8,7 +8,7 @@
 .tabs--pattern {
     margin-top: 40px;
     @media (max-width: 1920px) {
-        margin-top: 30px;
+        margin-top: 20px;
     }
 }
 
@@ -16,6 +16,7 @@
     margin-bottom: 55px;
     @media (max-width: 1920px) {
         margin-top: 30px;
+        margin-bottom: 30px;
     }
     @media (max-width: 1200px) {
         text-align: center;
@@ -58,10 +59,10 @@
     @extend .projects-slider;
 
     &.patterns--slider {
-        margin: 50px 0 70px!important;
+        margin: 30px 0 60px!important;
 
         @media (max-width: 1700px) {
-            margin: 50px 0 100px!important;
+            margin: 40px 0 100px!important;
 
             .slick-arrow {
                 margin-top: 40px;
@@ -198,11 +199,19 @@
     background-color: #202020;
     @include flex($justify: flex-start);
     margin: 0 auto;
+    @media (max-width: 720px) {
+        display: block;
+        padding-top: 20px;
+    }
     .pattern-card {
         margin: 0;
         &:after,
         &:before {
             display: none;
+        }
+        @media (max-width: 720px) {
+            display: block;
+            margin: 0 auto 20px;
         }
     }
     .mfp-close {
@@ -213,12 +222,22 @@
 .pattern-info {
     text-align: left;
     padding: 20px 20px 20px 12%;
-    span {
+     @media (max-width: 1200px) {
+         padding-left: 20px;
+     }
+     @media (max-width: 720px) {
+         width: 100%;
+     }
+    > p > strong,
+    > p {
         display: block;
         color: $gold;
         font-size: 36px;
         font-weight: 400;
         margin-bottom: 8px;
+        @media (max-width: 720px) {
+            font-size: 24px;
+        }
     }
     ul {
         li {
@@ -227,6 +246,9 @@
             font-size: 20px;
             font-weight: 300;
             color: #B5B5B5;
+            @media (max-width: 720px) {
+                font-size: 18px;
+            }
             strong {
                 color: #FFF;
                 font-weight: 200;
