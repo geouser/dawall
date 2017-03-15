@@ -333,6 +333,17 @@ body {
   background-image: -webkit-linear-gradient( 0deg, rgb(0,0,0) 0%, rgba(0,0,0,0) 100%);
   background-image: -ms-linear-gradient( 0deg, rgb(0,0,0) 0%, rgba(0,0,0,0) 100%);
 }
+.shadow-left-small {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 35%;
+  background-image: -moz-linear-gradient( 180deg, rgba(0,0,0,0) 0%, rgb(0,0,0) 100%);
+  background-image: -webkit-linear-gradient( 180deg, rgba(0,0,0,0) 0%, rgb(0,0,0) 100%);
+  background-image: -ms-linear-gradient( 180deg, rgba(0,0,0,0) 0%, rgb(0,0,0) 100%);
+}
 .shadow-right {
   display: block;
   position: absolute;
@@ -344,6 +355,17 @@ body {
   background-image: -webkit-linear-gradient( 0deg, rgba(0,0,0,0) 0%, rgb(0,0,0) 100%);
   background-image: -ms-linear-gradient( 0deg, rgba(0,0,0,0) 0%, rgb(0,0,0) 100%);
 
+}
+.shadow-right-large {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  background-image: -moz-linear-gradient( 0deg, rgba(0,0,0,0.2) 0%, rgb(0,0,0) 100%);
+  background-image: -webkit-linear-gradient( 0deg, rgba(0,0,0,0.2) 0%, rgb(0,0,0) 100%);
+  background-image: -ms-linear-gradient( 0deg, rgba(0,0,0,0.2) 0%, rgb(0,0,0) 100%);
 }
 
 .shadow-top-light {
